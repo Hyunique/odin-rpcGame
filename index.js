@@ -50,6 +50,9 @@ function playRound(playerSelection, computerSelection) {
     playerSelection = prompt("Choose your method!").toLowerCase();
     computerSelection = computerPlay();
 
+    while (playerSelection !== 'rock' && playerSelection !== 'paper' && playerSelection !== 'scissors') {
+        playerSelection = prompt("Not a valid answer. Try again!").toLowerCase();
+    }
     if (playerSelection === computerSelection) {
         return "Tie game!"
     } else if (playerSelection === 'rock') {
@@ -76,8 +79,6 @@ function playRound(playerSelection, computerSelection) {
             myScore += 1
             return "You win! Scissors beats Paper"
         }
-    } else {
-        playerSelection = prompt("Give valid option!!!!").toLowerCase();
     }
 }
 
