@@ -1,3 +1,18 @@
+
+/* Hide intro page and transit into play page */
+let startBtn = document.querySelector('.startButton')
+let introContainer = document.querySelector('.introContainer')
+startBtn.addEventListener('click', () => {
+    introContainer.style.opacity = 0;
+    introContainer.style.transform = 'scale(0)';
+    introContainer.style.display = 'none';
+})
+
+
+
+
+
+
 /* pick rock paper or scissors randomly */
 function computerPlay() {
     let rps = ['rock', 'paper', 'scissors']
