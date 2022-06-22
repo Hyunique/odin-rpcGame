@@ -26,6 +26,11 @@ font-family: 'Reenie Beanie', cursive; */
 } */
 
 
+body {
+    height: 100%;
+    margin: 0;
+}
+
 .introContainer {
     width: 100%;
     height: 100vh;
@@ -33,7 +38,8 @@ font-family: 'Reenie Beanie', cursive; */
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* margin: 50px 50px; */
+    background-color: #fff7ed;
+    position: fixed
 }
 
 .introTitle {
@@ -57,27 +63,38 @@ font-family: 'Reenie Beanie', cursive; */
 }
 
 .startButton {
-    width: 200px;
+    width: 250px;
     height: 70px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: cornflowerblue;
     font-family: 'Nothing You Could Do', cursive;
     font-size: 30px;
     color: cornflowerblue;
     background-color: rgba(256, 256, 256, 0);
-    border-style: none;
     text-align: center;
+    margin-top: 60px;
+    transition: background-color, .3s;
 }
 
 .startButton:hover {
-    color: purple
+    color: white;
+    background-color: cornflowerblue;
+    transition: background-color, .3s;
 }
 
 
 
 
-/* .title {
+.title {
     font-size: 50px;
-
     font-family: 'Nothing You Could Do', cursive;
     text-align: center;
     padding: 10px;
-} */
+}
+
+.playContainer {
+    display: flex;
+    justify-content: center;
+}
