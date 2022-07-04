@@ -182,6 +182,7 @@ body {
 
 img {
     width: 200px;
+    transition: .2s;
 }
 
 img:hover {
@@ -196,4 +197,8 @@ img:hover {
     border-color: cornflowerblue;
     border-width: .5px;
     background-color: white;
+}
+
+.joey {
+    display: none;
 }
